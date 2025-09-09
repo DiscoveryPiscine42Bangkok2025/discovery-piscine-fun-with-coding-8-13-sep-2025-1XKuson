@@ -1,0 +1,80 @@
+.container {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu .menu-button {
+    background-color: #bd792a;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 7px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.menu-button .menu-top {
+    width: 25px;
+    height: 4px ;
+    align-self: center;
+}
+.menu-button span {
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: white;
+}
+
+.menu .menu-button:hover {
+    background-color: #e5c55e;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu .menu-content {
+    width: 200px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+}
+
+.menu:hover .menu-content,
+.menu:focus-within .menu-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background 0.3s;
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-content a:nth-child(1):hover {
+    background-color: #f5e3b3;
+}
+
+.menu-content a:nth-child(2):hover {
+    background-color: #f7a072;
+}
+
+.menu-content a:nth-child(3):hover {
+    background-color: #ffdd57;
+}
+
+.menu-content a:nth-child(4):hover {
+    background-color: #80b918;
+}
+
+.menu-content a:last-child:hover {
+    background-color: #f5e3b3;
+}
