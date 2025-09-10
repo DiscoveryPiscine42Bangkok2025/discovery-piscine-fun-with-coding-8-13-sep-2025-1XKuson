@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function changeBackgroundColor() {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      }
+    </script>
+    <button onclick="changeBackgroundColor()">Click me!</button>
+  </body>
+</html>
