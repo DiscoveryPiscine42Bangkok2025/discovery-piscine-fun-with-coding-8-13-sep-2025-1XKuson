@@ -107,7 +107,7 @@ nav .nav-links a:hover {
 }
 
 section {
-    padding: 48px 16px;
+    padding: 16px;
 }
 
 #home {
@@ -120,12 +120,43 @@ section {
     color: #ffffff;
 }
 
-#contact {
-    background-color: var(--color-gradient-1);
+#home h2 {
+    color: var(--color-5);
+    font-size: 30px;
+    text-shadow: 2px 2px 3px var(--color-gradient-2);
+    margin-bottom: 10px;
 }
 
-#skills {
-    min-height: 70vh;
+#home p {
+    color: var(--color-4);
+    margin-bottom: 10px;
+}
+
+#home h3 {
+    color: var(--color-5);
+    text-shadow: 2px 2px 3px var(--color-gradient-2);
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+#contact {
+    background-color: var(--color-gradient-1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact p {
+    color: var(--color-5);
+}
+
+#contact h2 {
+    color: var(--color-3);
+}
+
+#skills, #projects {
+    min-height: 40vh;
     background-color: var(--color-1);
     display: flex;
     align-items: center;
@@ -137,27 +168,48 @@ section {
     padding: 0 1rem;
 }
 
+.card-contain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color-1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 15px;
+    padding: 2rem;
+    /* max-width: 400px; */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-contain:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
 .profile-img {
     border: 2px solid var(--color-2);
-    border-radius: 8px;
-    width: 100%;
+    border-radius: 50%;
+    width: 70%;
     height: 50%;
-    /* max-width: 200px; */
-    margin: 0 auto 24px auto;
-    display: block;
+    object-fit: cover;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card-contain:hover .profile-img {
+    transform: scale(1.1);
 }
 
 section h2 {
     color: var(--color-3);
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 section p {
     max-width: 600px;
-    margin: 0 auto;
     text-align: center;
-    color: var(--color-5);
+    color: var(--color-gradient-2);
 }
 
 .skills-grid {
@@ -185,13 +237,13 @@ section p {
 }
 
 .email {
-    color: var(--color-3);
+    color: var(--color-gradient-2);
 }
 .email:hover {
     color: var(--color-4);
 }
 #contact a:not(.email) {
-    color: var(--color-3);
+    color: var(--color-gradient-2);
     margin: 0 0.5rem;
 }
 #contact a:not(.email):hover {
