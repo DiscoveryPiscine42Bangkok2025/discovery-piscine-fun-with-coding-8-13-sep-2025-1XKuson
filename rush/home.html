@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush Project!!</title>
+    <link rel="stylesheet" href="home.css" />
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo">
+        </div>
+        <nav class="nav">
+            <a href="#">ภาษาไทย</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>ใครกำลังรับชมอยู่?</h1>
+        <div class="profiles">
+            <div class="profile">
+                <a href="/rush/kuta/kuta.html"><img src="https://avatars.githubusercontent.com/u/115791113?v=4" alt="Profile 1"></a>
+                <p>kuta</p>
+            </div>
+            <div class="profile">
+                <a href="/rush/twiilasu/twiilasu.html"><img src="https://avatars.githubusercontent.com/u/123563136?v=4" alt="Profile 2"></a>
+                <p>twiilasu</p>
+            </div>
+            <div class="profile">
+                <div class="add-profile"><div class="text">+</div></div>
+                <p>เพิ่มผู้ใช้</p>
+            </div>
+        </div>
+        <button class="manage-btn">จัดการโปรไฟล์</button>
+    </div>
+
+    <script>
+        document.querySelectorAll('.profile').forEach(profile => {
+            profile.addEventListener('click', () => {
+                if (`${profile.querySelector('p').textContent}` == "เพิ่มผู้ใช้") {
+                    alert(`เพิ่มผู้ใช้: ไม่ได้จร้าาาา!!!`);
+                } else {
+                    alert(`เลือกโปรไฟล์: ${profile.querySelector('p').textContent}`);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

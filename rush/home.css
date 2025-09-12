@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: linear-gradient(to right, #000, #7f1d1d);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.nav a:hover {
+    color: #e50914;
+}
+
+.container {
+    text-align: center;
+    max-width: 800px;
+    padding: 80px 20px 20px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.profile:hover {
+    transform: scale(1.1);
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 4px solid transparent;
+    transition: border 0.3s;
+}
+
+.profile:hover img {
+    border: 4px solid #e50914;
+}
+
+.profile p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.profile:hover p {
+    color: #fff;
+}
+
+.profile .add-profile {
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #fff;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: border 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .add-profile .text {
+    font-size: 36px;
+}
+
+.profile:hover .add-profile {
+    border: 4px solid #e50914;
+}
+
+.manage-btn {
+    margin-top: 40px;
+    background: #e50914;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.manage-btn:hover {
+    background: #f40612;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile p {
+        font-size: 1rem;
+    }
+
+    .profiles {
+        gap: 20px;
+    }
+
+    .manage-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .profile img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile p {
+        font-size: 0.9rem;
+    }
+}
