@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Rush Project Kuson</title>
+  </head>
+  <body class="bg-gray-50">
+    <!-- navbar -->
+    <nav
+      class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[80%] max-w-4xl z-50"
+    >
+      <div
+        class="flex flex-row bg-black/90 rounded-full justify-between items-center px-2 py-2 shadow-lg"
+      >
+        <div
+          id="menu-btn"
+          class="logo w-10 h-10 bg-white rounded-full flex items-center justify-center font-bold text-black text-xl transition delay-100 duration-100 ease-in-out hover:scale-180"
+        >
+          K
+        </div>
+        <div class="hidden md:flex flex-row space-x-6 text-white items-center">
+          <a
+            href="#Home"
+            class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
+          >
+            <i
+              class="fa fa-home text-white text-lg items-center hover:text-indigo-400"
+            ></i>
+            Home
+          </a>
+          <a
+            href="#Experiences"
+            class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
+            ><i
+              class="fa fa-book text-white text-lg items-center hover:text-indigo-400"
+            >
+            </i>
+            Experiences</a
+          >
+          <a
+            href="#Contact"
+            class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
+            ><i
+              class="fa fa-phone text-white text-lg items-center hover:text-indigo-400"
+            ></i>
+            Contact</a
+          >
+        </div>
+        <div class="flex items-center">
+          <!-- Hamburger for mobile -->
+          <button
+            id="hamburger-btn"
+            class="md:hidden flex items-center justify-center w-10 h-10 bg-white text-black rounded-full font-bold text-2xl transition delay-100 duration-100 ease-in-out hover:scale-180"
+            aria-label="Open menu"
+            type="button"
+          >
+            &#9776;
+          </button>
+          <!-- Sign Up for desktop -->
+          <a
+            href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-8-13-sep-2025-1XKuson"
+            target="_blank"
+            rel="noopener"
+            class="hidden md:flex items-center ml-3 bg-white text-black px-3 py-2 rounded-full font-semibold transition delay-100 duration-100 ease-in-out hover:scale-180"
+            aria-label="GitHub Repository"
+          >
+            <i class="fa fa-github text-2xl mr-2"></i>
+            GitHub
+          </a>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="md:hidden flex flex-col items-center gap-2 bg-gray-100 rounded-full py-2 px-2 w-11 h-auto absolute right-[7px] top-[7px] z-45"
+      >
+        <a
+          href="#Home"
+          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full hover:bg-gray-200 transition"
+        >
+          <i class="fa fa-home text-white text-lg items-center"></i>
+        </a>
+        <a
+          href="#Experiences"
+          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full transition"
+        >
+          <i class="fa fa-book text-white text-lg items-center"></i>
+        </a>
+        <a
+          href="#Contact"
+          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full transition"
+        >
+          <i class="fa fa-phone text-white text-lg items-center"></i>
+        </a>
+        <a
+          href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-8-13-sep-2025-1XKuson"
+          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full transition"
+        >
+          <i class="fa fa-github text-white text-lg items-center"></i>
+        </a>
+      </div>
+    </nav>
+    <!-- container -->
+    <main class="pt-24 w-full">
+      <!-- Home Section -->
+      <section
+        class="h-screen flex flex-col justify-center items-center bg-white px-4"
+        id="Home"
+      >
+        <h1
+          class="text-4xl md:text-6xl font-extrabold text-indigo-700 mb-4 text-center"
+        >
+          Welcome to Kuson's Rush Project
+        </h1>
+        <p class="text-lg md:text-2xl text-gray-700 mb-8 text-center max-w-2xl">
+          Discover our journey, experiences, and how to get in touch. This is a
+          mockup landing page built with Tailwind CSS.
+        </p>
+        <a
+          href="#Experiences"
+          class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition"
+          >See Experiences</a
+        >
+      </section>
+      <!-- Experiences Section -->
+      <section
+        class="h-screen bg-[#4338ca] flex flex-col justify-center items-center px-4"
+        id="Experiences"
+      >
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 text-center">
+          Our Experiences
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 8v4l3 3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Project Management</h3>
+            <p class="text-gray-600 text-center">
+              Efficiently managing projects with agile methodologies and
+              teamwork.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M16 7a4 4 0 01-8 0"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Creative Design</h3>
+            <p class="text-gray-600 text-center">
+              Delivering modern and responsive designs for web and mobile
+              platforms.
+            </p>
+          </div>
+          <div
+            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+          >
+            <div
+              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4"
+            >
+              <svg
+                class="w-8 h-8 text-indigo-600"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 8v4l3 3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Development</h3>
+            <p class="text-gray-600 text-center">
+              Building scalable and maintainable applications using modern
+              technologies.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Section -->
+      <section
+        class="h-screen bg-[#10b981] flex flex-col justify-center items-center px-4"
+        id="Contact"
+      >
+        <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 text-center">
+          Contact Us
+        </h2>
+        <form
+          class="bg-white rounded-xl shadow-lg p-8 w-full max-w-md flex flex-col space-y-4"
+        >
+          <input
+            type="text"
+            placeholder="Your Name"
+            class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+          />
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+          />
+          <textarea
+            placeholder="Your Message"
+            rows="4"
+            class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
+          ></textarea>
+          <button
+            type="submit"
+            class="bg-[#10b981] text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+    <script>
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menu-btn");
+      const hamburgerBtn = document.getElementById("hamburger-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      // Toggle with hamburger button
+      hamburgerBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Optional: toggle with logo
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when a link is clicked
+      mobileMenu.querySelectorAll("a,button").forEach((el) => {
+        el.addEventListener("click", () => {
+          mobileMenu.classList.add("hidden");
+        });
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", (event) => {
+        const isMenuOpen = !mobileMenu.classList.contains("hidden");
+        if (
+          isMenuOpen &&
+          !mobileMenu.contains(event.target) &&
+          !hamburgerBtn.contains(event.target) &&
+          !menuBtn.contains(event.target)
+        ) {
+          mobileMenu.classList.add("hidden");
+        }
+      });
+    </script>
+  </body>
+</html>
