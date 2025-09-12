@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="twiilasu.css" />
+    <title>Rush Project!!!</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1>About Me</h1>
+            <div id="menu-toggle" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="nav-links" class="nav-links" style="display: none;">
+                <a href="#home">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div id="mobile-menu">
+            <a href="#home">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <div class="container" style="padding-top: 80px;">
+        <!-- Home -->
+        <section id="home">
+            <div>
+                <img src="https://avatars.githubusercontent.com/u/123563136?v=4" alt="Profile Picture" class="profile-img"/>
+                <h2>Thanapat Wilasuwan</h2>
+                <p>IoT Engineer intern, @Utac Thai Limited!</p>
+            </div>
+        </section>
+    
+        <!-- Skills -->
+        <section id="skills">
+            <div>
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Web Coding</h3>
+                        <p>HTML, CSS, Js, ReactJs</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Other Technical Skill</h3>
+                        <p>Python, C, C#, Arduino, linux (basic)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Internship</h3>
+                        <p>IoT Engineer</p>
+                        <p>@Utac Thai Limited.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Hobbies</h3>
+                        <p>Everything except read books!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>
+                You can reach me at <a href="mailto:65010419@kmitl.ac.th" class="email">65010419@kmitl.ac.th</a>
+                or through the social media links below.
+            </p>
+            <div style="display:flex; justify-content:center; gap:1rem; margin-top:1.5rem;">
+                <a href="https://facebook.com/thanapat.wilasuwan.2024" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://github.com/ThEMaCcC" target="_blank" rel="noopener noreferrer">Github</a>
+                <a href="https://instagram.com/_tttthnxcrma_" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                document.getElementById('mobile-menu').style.display = 'none';
+                document.querySelector('.hamburger').classList.remove('active');
+            });
+        });
+
+        // Hamburger Menu Toggle and Resize Handler
+        function handleResize() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuToggle = document.getElementById('menu-toggle');
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.getElementById('nav-links');
+
+            if (window.innerWidth >= 768) {
+                mobileMenu.style.display = 'none'; // ซ่อน mobile menu
+                hamburger.classList.remove('active'); // กลับเป็น hamburger
+                navLinks.style.display = 'flex'; // แสดง navbar ปกติ
+                menuToggle.style.display = 'none'; // ซ่อน burger button
+            } else {
+                navLinks.style.display = 'none'; // ซ่อน navbar ปกติ
+                menuToggle.style.display = 'flex'; // แสดง burger button
+            }
+        }
+
+        const menuToggle = document.getElementById('menu-toggle');
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                const mobileMenu = document.getElementById('mobile-menu');
+                const hamburger = document.querySelector('.hamburger');
+                if (mobileMenu && hamburger) {
+                    if (mobileMenu.style.display === 'flex') {
+                        mobileMenu.style.display = 'none';
+                        hamburger.classList.remove('active');
+                    } else {
+                        mobileMenu.style.display = 'flex';
+                        hamburger.classList.add('active');
+                    }
+                    console.log('Toggle clicked, mobile-menu display:', mobileMenu.style.display);
+                }
+            });
+        }
+
+        // Add resize event listener
+        window.addEventListener('resize', handleResize);
+        // Initial check on page load
+        handleResize();
+    </script>
+</body>
+</html>
