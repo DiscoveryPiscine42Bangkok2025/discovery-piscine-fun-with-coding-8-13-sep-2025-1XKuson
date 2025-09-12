@@ -4,15 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./kuta.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Playpen+Sans+Thai:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
     <title>Rush Project Kuson</title>
   </head>
-  <body class="bg-gray-50">
-    <!-- navbar -->
+  <body class="bg-[#EEE]">
     <nav
       class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[80%] max-w-4xl z-50"
     >
@@ -27,13 +34,13 @@
         </div>
         <div class="hidden md:flex flex-row space-x-6 text-white items-center">
           <a
-            href="#Home"
+            href="#Profile"
             class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
           >
             <i
-              class="fa fa-home text-white text-lg items-center hover:text-indigo-400"
+              class="fa fa-user text-white text-lg items-center hover:text-indigo-400"
             ></i>
-            Home
+            Profile
           </a>
           <a
             href="#Experiences"
@@ -54,7 +61,6 @@
           >
         </div>
         <div class="flex items-center">
-          <!-- Hamburger for mobile -->
           <button
             id="hamburger-btn"
             class="md:hidden flex items-center justify-center w-10 h-10 bg-white text-black rounded-full font-bold text-2xl transition delay-100 duration-100 ease-in-out hover:scale-180"
@@ -63,7 +69,6 @@
           >
             &#9776;
           </button>
-          <!-- Sign Up for desktop -->
           <a
             href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-8-13-sep-2025-1XKuson"
             target="_blank"
@@ -76,16 +81,15 @@
           </a>
         </div>
       </div>
-      <!-- Mobile menu -->
       <div
         id="mobile-menu"
         class="md:hidden flex flex-col items-center gap-2 bg-gray-100 rounded-full py-2 px-2 w-11 h-auto absolute right-[7px] top-[7px] z-45"
       >
         <a
-          href="#Home"
+          href="#Profile"
           class="flex items-center bg-black gap-2 px-2 py-2 rounded-full hover:bg-gray-200 transition"
         >
-          <i class="fa fa-home text-white text-lg items-center"></i>
+          <i class="fa fa-user text-white text-lg items-center"></i>
         </a>
         <a
           href="#Experiences"
@@ -107,171 +111,483 @@
         </a>
       </div>
     </nav>
-    <!-- container -->
     <main class="pt-24 w-full">
-      <!-- Home Section -->
       <section
-        class="h-screen flex flex-col justify-center items-center bg-white px-4"
-        id="Home"
+        id="Profile"
+        class="relative min-h-screen bg-[#000000] text-[#EEEEEE] overflow-hidden"
       >
-        <h1
-          class="text-4xl md:text-6xl font-extrabold text-indigo-700 mb-4 text-center"
-        >
-          Welcome to Kuson's Rush Project
-        </h1>
-        <p class="text-lg md:text-2xl text-gray-700 mb-8 text-center max-w-2xl">
-          Discover our journey, experiences, and how to get in touch. This is a
-          mockup landing page built with Tailwind CSS.
-        </p>
-        <a
-          href="#Experiences"
-          class="bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition"
-          >See Experiences</a
-        >
+        <div
+          class="pointer-events-none absolute -top-28 -right-24 h-72 w-72 rounded-full blur-3xl opacity-20"
+          style="
+            background: radial-gradient(
+              60% 60% at 50% 50%,
+              #cf0a0a 0%,
+              rgba(207, 10, 10, 0) 70%
+            );
+          "
+        ></div>
+        <div
+          class="pointer-events-none absolute -bottom-24 -left-16 h-80 w-80 rounded-full blur-3xl opacity-20"
+          style="
+            background: radial-gradient(
+              60% 60% at 50% 50%,
+              #dc5f00 0%,
+              rgba(220, 95, 0, 0) 70%
+            );
+          "
+        ></div>
+
+        <div class="mx-auto max-w-7xl px-6 md:px-10 py-16 md:py-24">
+
+          <div class="mb-10 flex items-center gap-3">
+            <span
+              class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-zinc-900/60 px-3 py-1 text-xs tracking-wide"
+            >
+              <span
+                class="h-2 w-2 rounded-full"
+                style="background: #cf0a0a; box-shadow: 0 0 12px #cf0a0a"
+              ></span>
+              AVAILABLE FOR WORK
+            </span>
+            <span class="text-xs text-zinc-400">Portfolio / Profile</span>
+          </div>
+
+          <div
+            class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-10 items-center"
+          >
+            <div class="md:col-span-5">
+              <div
+                class="relative rounded-3xl bg-zinc-900/70 ring-1 ring-white/10 p-6 md:p-7 shadow-xl"
+              >
+                <div
+                  class="relative overflow-hidden rounded-2xl bg-zinc-800 aspect-square"
+                >
+                  <img
+                    src="https://avatars.githubusercontent.com/u/115791113?v=4"
+                    alt="Profile portrait"
+                    class="h-full w-full object-cover"
+                  />
+                  <div
+                    class="absolute left-4 top-4 rounded-full bg-[#DC5F00] text-black text-xs font-semibold px-3 py-1"
+                  >
+                    Engineer • Dev
+                  </div>
+                </div>
+                <div class="mt-5 flex items-center justify-between">
+                  <div class="text-sm text-zinc-300">Bangkok, Thailand</div>
+                  <div class="flex items-center gap-2">
+                    <a
+                      href="#"
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#EEEEEE] text-black hover:opacity-90 transition"
+                      aria-label="GitHub"
+                    >
+                      <i class="fa fa-github"></i>
+                    </a>
+                    <a
+                      href="#"
+                      class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#EEEEEE] text-black hover:opacity-90 transition"
+                      aria-label="LinkedIn"
+                    >
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                    <button
+                      id="copyEmailBtn"
+                      class="inline-flex h-9 px-3 items-center justify-center gap-2 rounded-xl bg-zinc-800 text-[#EEEEEE] ring-1 ring-white/10 hover:bg-zinc-700 transition"
+                      type="button"
+                      aria-label="Copy email"
+                    >
+                      <i class="fa fa-envelope"></i>
+                      <span class="text-xs">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-7">
+              <h1
+                class="text-3xl md:text-5xl font-extrabold tracking-tight leading-tight"
+              >
+                Hi, I'm
+                <span
+                  class="bg-gradient-to-r from-[#EEEEEE] via-[#DC5F00] to-[#CF0A0A] bg-clip-text text-transparent"
+                  >Kuson Ta</span
+                >
+              </h1>
+              <p
+                class="mt-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-zinc-900/60 px-3 py-1 text-sm"
+              >
+                <span
+                  class="h-2 w-2 rounded-full"
+                  style="background: #dc5f00"
+                ></span>
+                Full‑Stack Developer • IoT Engineer
+              </p>
+              <p class="mt-6 max-w-2xl text-zinc-300">
+                I craft fast, accessible web apps with a focus on elegant UX and
+                maintainable code. My toolkit includes modern JavaScript
+                frameworks, component systems, and a healthy respect for
+                performance budgets.
+              </p>
+
+              <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <div
+                  class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4"
+                >
+                  <div class="text-2xl font-bold">
+                    5+<span class="text-[#DC5F00]"> yrs</span>
+                  </div>
+                  <div class="text-sm text-zinc-400">Experience</div>
+                </div>
+                <div
+                  class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4"
+                >
+                  <div class="text-2xl font-bold">
+                    30+<span class="text-[#CF0A0A]"> proj</span>
+                  </div>
+                  <div class="text-sm text-zinc-400">Delivered</div>
+                </div>
+                <div
+                  class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4"
+                >
+                  <div class="text-2xl font-bold">
+                    100%<span class="text-[#EEEEEE]">+</span>
+                  </div>
+                  <div class="text-sm text-zinc-400">Client‑first</div>
+                </div>
+              </div>
+
+              <div class="mt-10 flex flex-wrap items-center gap-3">
+                <a
+                  href="#Contact"
+                  class="inline-flex items-center gap-2 rounded-xl bg-[#DC5F00] px-5 py-3 font-semibold text-black hover:opacity-90 active:opacity-80 transition"
+                >
+                  <i class="fa fa-paper-plane"></i>
+                  Hire me
+                </a>
+                <a
+                  href="/cv.pdf"
+                  class="inline-flex items-center gap-2 rounded-xl bg-zinc-800 px-5 py-3 font-semibold text-[#EEEEEE] ring-1 ring-white/10 hover:bg-zinc-700 transition"
+                >
+                  <i class="fa fa-download"></i>
+                  Download CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="absolute inset-x-0 bottom-0 h-1"
+          style="background: linear-gradient(90deg, #cf0a0a, #dc5f00)"
+        ></div>
       </section>
-      <!-- Experiences Section -->
       <section
-        class="h-screen bg-[#4338ca] flex flex-col justify-center items-center px-4"
-        id="Experiences"
+        class="min-h-screen flex flex-col justify-center items-center bg-[#EEE] px-2 sm:px-4"
+        id="Profile"
       >
-        <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 text-center">
-          Our Experiences
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+        <div
+          class="max-w-[80%] md:max-w-[70%] w-full flex flex-col md:flex-row h-full bg-black mt-10 mb-20 rounded-3xl"
+        >
           <div
-            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
+            class="flex flex-col w-full md:w-1/2 p-6 md:p-12 items-center md:items-start"
           >
-            <div
-              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4"
-            >
-              <svg
-                class="w-8 h-8 text-indigo-600"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
+            <img
+              class="rounded-3xl w-full h-auto md:w-auto md:h-auto object-cover"
+              src="https://avatars.githubusercontent.com/u/115791113?v=4"
+              alt=""
+            />
+            <div class="w-full">
+              <h1
+                class="text-2xl md:text-5xl font-bold text-white mt-6 mb-4 text-center md:text-left sm:px-5"
               >
-                <path
-                  d="M12 8v4l3 3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                Kuson Ta
+              </h1>
+              <p
+                class="text-white text-base md:text-lg text-center md:text-left sm:p-5"
+              >
+                Dual-degree student at KMITL with expertise in IoT, AI, and
+                full-stack development. Skilled in Python, C++, JavaScript, and
+                hardware platforms like Raspberry Pi and Arduino, creating
+                innovative tech solutions for real-world problems.
+              </p>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Project Management</h3>
-            <p class="text-gray-600 text-center">
-              Efficiently managing projects with agile methodologies and
-              teamwork.
-            </p>
           </div>
-          <div
-            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
-          >
-            <div
-              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4"
+          <div class="flex flex-col w-full md:w-1/2 p-6 md:p-12">
+            <h2
+              class="text-2xl md:text-3xl font-bold text-indigo-300 mb-6 flex items-center gap-3"
             >
-              <svg
-                class="w-8 h-8 text-indigo-600"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M16 7a4 4 0 01-8 0"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Creative Design</h3>
-            <p class="text-gray-600 text-center">
-              Delivering modern and responsive designs for web and mobile
-              platforms.
-            </p>
-          </div>
-          <div
-            class="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center"
-          >
+              <i class="fa fa-cogs text-indigo-400"></i> Core Skills
+            </h2>
+
             <div
-              class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-4"
+              class="mb-6 bg-zinc-800 p-4 md:p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-md"
             >
-              <svg
-                class="w-8 h-8 text-indigo-600"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                viewBox="0 0 24 24"
+              <h3
+                class="text-base md:text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2"
               >
-                <path
-                  d="M12 8v4l3 3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="10"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
+                <i class="fa fa-code text-indigo-400"></i> Programming &
+                Software
+              </h3>
+              <ul
+                class="list-disc list-inside text-gray-200 text-sm md:text-base ml-2 space-y-2"
+              >
+                <li>
+                  <span class="font-semibold text-white">Languages:</span>
+                  C, C++ (OOP), Python, JavaScript, HTML, CSS, SQL
+                </li>
+                <li>
+                  <span class="font-semibold text-white"
+                    >Frameworks & Tools:</span
+                  >
+                  Node.js, Express.js, React.js, Postman, Git, Docker, Cisco
+                  Packet Tracer
+                </li>
+              </ul>
             </div>
-            <h3 class="text-xl font-semibold mb-2">Development</h3>
-            <p class="text-gray-600 text-center">
-              Building scalable and maintainable applications using modern
-              technologies.
-            </p>
+
+            <div
+              class="mb-6 bg-zinc-800 p-4 md:p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-md"
+            >
+              <h3
+                class="text-base md:text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2"
+              >
+                <i class="fa fa-microchip text-indigo-400"></i> Hardware & IoT
+                Tools
+              </h3>
+              <ul
+                class="list-disc list-inside text-gray-200 text-sm md:text-base ml-2 space-y-2"
+              >
+                <li>Raspberry Pi, Arduino, ESP32, Integrated Circuits (ICs)</li>
+              </ul>
+            </div>
+
+            <div
+              class="bg-zinc-800 p-4 md:p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-md"
+            >
+              <h3
+                class="text-base md:text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2"
+              >
+                <i class="fa fa-users text-indigo-400"></i> Professional Skills
+              </h3>
+              <ul
+                class="list-disc list-inside text-gray-200 text-sm md:text-base ml-2 space-y-2"
+              >
+                <li>
+                  Teamwork, Critical Thinking, Communication, Problem Solving,
+                  Time Management, Adaptability, Leadership
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-      <!-- Contact Section -->
       <section
-        class="h-screen bg-[#10b981] flex flex-col justify-center items-center px-4"
+        class="h-screen bg-[#CF0A0A] flex flex-col justify-center items-center px-4"
+        id="Experiences"
+      >
+        <div
+          class="max-w-[80%] md:max-w-[70%] bg-[#EEE] w-full h-[70%] rounded-3xl"
+        ></div>
+      </section>
+      <section
+        class="min-h-screen bg-[#EEE] flex flex-col items-center justify-center"
         id="Contact"
       >
-        <h2 class="text-3xl md:text-5xl font-bold text-white mb-8 text-center">
-          Contact Us
-        </h2>
-        <form
-          class="bg-white rounded-xl shadow-lg p-8 w-full max-w-md flex flex-col space-y-4"
+        <div
+          class="max-w-[80%] md:max-w-[70%] w-full bg-black rounded-3xl overflow-hidden shadow-xl"
         >
-          <input
-            type="text"
-            placeholder="Your Name"
-            class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-          />
-          <textarea
-            placeholder="Your Message"
-            rows="4"
-            class="px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400"
-          ></textarea>
-          <button
-            type="submit"
-            class="bg-[#10b981] text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition"
+          <div
+            class="w-full px-6 md:px-10 py-6 flex items-center justify-between border-b border-white/10"
           >
-            Send Message
-          </button>
-        </form>
+            <h2
+              class="text-2xl md:text-3xl font-bold text-white tracking-tight"
+            >
+              Contact
+            </h2>
+            <span class="inline-flex items-center gap-2 text-sm text-[#EEE]/80">
+              <span
+                class="w-2.5 h-2.5 rounded-full bg-[#CF0A0A] shadow-[0_0_8px]"
+              ></span>
+              Open to opportunities
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-0">
+            <aside class="p-6 md:p-10 bg-zinc-900">
+              <ul class="space-y-4">
+                <li class="group">
+                  <a
+                    href="mailto:kusonta.dev@gmail.com"
+                    class="flex items-center gap-4 p-4 rounded-2xl bg-zinc-800/70 hover:bg-zinc-800 transition ring-1 ring-white/5"
+                  >
+                    <div
+                      class="w-11 h-11 rounded-xl flex items-center justify-center bg-[#CF0A0A] text-white text-xl"
+                    >
+                      <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-[#EEE] font-semibold leading-tight">
+                        Email
+                      </p>
+                      <p class="text-sm text-zinc-300">kusonta.dev@gmail.com</p>
+                    </div>
+                    <i
+                      class="fa fa-angle-right text-zinc-400 group-hover:text-[#DC5F00]"
+                    ></i>
+                  </a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="https://github.com/1XKuson"
+                    target="_blank"
+                    rel="noopener"
+                    class="flex items-center gap-4 p-4 rounded-2xl bg-zinc-800/70 hover:bg-zinc-800 transition ring-1 ring-white/5"
+                  >
+                    <div
+                      class="w-11 h-11 rounded-xl flex items-center justify-center bg-[#DC5F00] text-black text-xl"
+                    >
+                      <i class="fa fa-github"></i>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-[#EEE] font-semibold leading-tight">
+                        GitHub
+                      </p>
+                      <p class="text-sm text-zinc-300">1XKuson</p>
+                    </div>
+                    <i
+                      class="fa fa-angle-right text-zinc-400 group-hover:text-[#CF0A0A]"
+                    ></i>
+                  </a>
+                </li>
+
+                <li class="group">
+                  <a
+                    href="https://www.linkedin.com/in/kuson-ta-7913572a1/"
+                    target="_blank"
+                    rel="noopener"
+                    class="flex items-center gap-4 p-4 rounded-2xl bg-zinc-800/70 hover:bg-zinc-800 transition ring-1 ring-white/5"
+                  >
+                    <div
+                      class="w-11 h-11 rounded-xl flex items-center justify-center bg-[#EEE] text-black text-xl"
+                    >
+                      <i class="fa fa-linkedin-square"></i>
+                    </div>
+                    <div class="flex-1">
+                      <p class="text-[#EEE] font-semibold leading-tight">
+                        LinkedIn
+                      </p>
+                      <p class="text-sm text-zinc-300">/in/kuson-ta</p>
+                    </div>
+                    <i
+                      class="fa fa-angle-right text-zinc-400 group-hover:text-[#DC5F00]"
+                    ></i>
+                  </a>
+                </li>
+
+                <li class="p-4 rounded-2xl bg-zinc-800/50 ring-1 ring-white/5">
+                  <p class="text-[#EEE] font-semibold">Location</p>
+                  <p class="text-sm text-zinc-300">
+                    Bangkok, Thailand (ICT, UTC+7)
+                  </p>
+                </li>
+              </ul>
+
+              <p class="mt-8 text-xs text-zinc-400">
+                Prefer email for quickest response. I usually reply within a
+                day.
+              </p>
+            </aside>
+
+            <div class="p-6 md:p-10 bg-black">
+              <form id="contactForm" class="space-y-5">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label
+                      for="name"
+                      class="block text-sm font-medium text-[#EEE] mb-2"
+                      >Your name</label
+                    >
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      class="w-full rounded-xl bg-[#EEE] text-black placeholder-black/50 px-4 py-3 outline-none ring-2 ring-transparent focus:ring-[#DC5F00] transition"
+                      placeholder="Jane Doe"
+                    />
+                  </div>
+                  <div>
+                    <label
+                      for="email"
+                      class="block text-sm font-medium text-[#EEE] mb-2"
+                      >Email</label
+                    >
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      class="w-full rounded-xl bg-[#EEE] text-black placeholder-black/50 px-4 py-3 outline-none ring-2 ring-transparent focus:ring-[#DC5F00] transition"
+                      placeholder="jane@email.com"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label
+                    for="subject"
+                    class="block text-sm font-medium text-[#EEE] mb-2"
+                    >Subject</label
+                  >
+                  <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    required
+                    class="w-full rounded-xl bg-[#EEE] text-black placeholder-black/50 px-4 py-3 outline-none ring-2 ring-transparent focus:ring-[#CF0A0A] transition"
+                    placeholder="Let's collaborate"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    for="message"
+                    class="block text-sm font-medium text-[#EEE] mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    class="w-full rounded-xl bg-[#EEE] text-black placeholder-black/50 px-4 py-3 outline-none ring-2 ring-transparent focus:ring-[#CF0A0A] transition"
+                    placeholder="Tell me about your project or idea…"
+                  ></textarea>
+                </div>
+
+                <div class="flex items-center gap-3">
+                  <button
+                    type="submit"
+                    class="inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-black bg-[#DC5F00] hover:opacity-90 active:opacity-80 transition"
+                  >
+                    <i class="fa fa-paper-plane"></i> Send message
+                  </button>
+
+                  <button
+                    type="reset"
+                    class="px-5 py-3 rounded-xl font-semibold bg-zinc-800 text-[#EEE] hover:bg-zinc-700 transition"
+                  >
+                    Reset
+                  </button>
+                </div>
+
+                <p id="formToast" class="hidden mt-3 text-sm"></p>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script>
