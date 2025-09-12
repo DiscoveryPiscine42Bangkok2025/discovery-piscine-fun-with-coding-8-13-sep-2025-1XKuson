@@ -20,60 +20,61 @@
     <title>Rush Project Kuson</title>
   </head>
   <body class="bg-[#EEE]">
+    <script src="./kuta.js"></script>
     <nav
       class="fixed top-4 left-1/2 transform -translate-x-1/2 w-[80%] max-w-4xl z-50"
     >
       <div
-        class="flex flex-row bg-black/90 rounded-full justify-between items-center px-2 py-2 shadow-lg"
+        class="flex flex-row bg-black/90 rounded-full justify-between items-center px-2 py-2 shadow-lg ring-1 ring-[#EEEEEE]/10"
       >
         <div
           id="menu-btn"
-          class="logo w-10 h-10 bg-white rounded-full flex items-center justify-center font-bold text-black text-xl transition delay-100 duration-100 ease-in-out hover:scale-180"
+          class="logo w-10 h-10 bg-[#EEEEEE] rounded-full flex items-center justify-center font-bold text-black text-xl transition delay-100 duration-100 ease-in-out hover:scale-180 cursor-pointer"
         >
           K
         </div>
-        <div class="hidden md:flex flex-row space-x-6 text-white items-center">
+
+        <div
+          class="hidden md:flex flex-row space-x-6 text-[#EEEEEE] items-center"
+        >
           <a
             href="#Profile"
-            class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
+            class="text-lg font-semibold hover:text-[#DC5F00] transition flex items-center flex-row gap-2"
           >
-            <i
-              class="fa fa-user text-white text-lg items-center hover:text-indigo-400"
-            ></i>
+            <i class="fa fa-user text-[#EEEEEE] text-lg items-center"></i>
             Profile
           </a>
           <a
-            href="#Experiences"
-            class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
-            ><i
-              class="fa fa-book text-white text-lg items-center hover:text-indigo-400"
-            >
-            </i>
-            Experiences</a
+            href="#Skills"
+            class="text-lg font-semibold hover:text-[#DC5F00] transition flex items-center flex-row gap-2"
           >
+            <i class="fa fa-book text-[#EEEEEE] text-lg items-center"></i>
+            Skills
+          </a>
           <a
             href="#Contact"
-            class="text-lg font-semibold hover:text-indigo-400 transition flex items-center flex-row gap-2"
-            ><i
-              class="fa fa-phone text-white text-lg items-center hover:text-indigo-400"
-            ></i>
-            Contact</a
+            class="text-lg font-semibold hover:text-[#DC5F00] transition flex items-center flex-row gap-2"
           >
+            <i class="fa fa-phone text-[#EEEEEE] text-lg items-center"></i>
+            Contact
+          </a>
         </div>
+
         <div class="flex items-center">
           <button
             id="hamburger-btn"
-            class="md:hidden flex items-center justify-center w-10 h-10 bg-white text-black rounded-full font-bold text-2xl transition delay-100 duration-100 ease-in-out hover:scale-180"
+            class="md:hidden flex items-center justify-center w-10 h-10 bg-[#CF0A0A] text-black rounded-full font-bold text-2xl transition delay-100 duration-100 ease-in-out hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-[#DC5F00]"
             aria-label="Open menu"
             type="button"
           >
             &#9776;
           </button>
+
           <a
             href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-8-13-sep-2025-1XKuson"
             target="_blank"
             rel="noopener"
-            class="hidden md:flex items-center ml-3 bg-white text-black px-3 py-2 rounded-full font-semibold transition delay-100 duration-100 ease-in-out hover:scale-180"
+            class="hidden md:flex items-center ml-3 bg-[#DC5F00] text-black px-3 py-2 rounded-full font-semibold transition delay-100 duration-100 ease-in-out hover:scale-180"
             aria-label="GitHub Repository"
           >
             <i class="fa fa-github text-2xl mr-2"></i>
@@ -81,37 +82,43 @@
           </a>
         </div>
       </div>
+
       <div
         id="mobile-menu"
-        class="md:hidden flex flex-col items-center gap-2 bg-gray-100 rounded-full py-2 px-2 w-11 h-auto absolute right-[7px] top-[7px] z-45"
+        class="hidden md:hidden flex flex-col items-center gap-2 bg-[#000000]/95 ring-1 ring-[#EEEEEE]/10 rounded-2xl py-2 px-2 w-11 h-auto absolute right-[7px] top-[7px] z-45 backdrop-blur-sm"
       >
         <a
           href="#Profile"
-          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full hover:bg-gray-200 transition"
+          class="flex items-center gap-2 px-2 py-2 rounded-full bg-[#EEEEEE] text-black hover:bg-[#DC5F00] hover:text-black transition"
+          aria-label="Profile"
         >
-          <i class="fa fa-user text-white text-lg items-center"></i>
+          <i class="fa fa-user text-black text-lg items-center"></i>
         </a>
         <a
-          href="#Experiences"
-          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full transition"
+          href="#Skills"
+          class="flex items-center gap-2 px-2 py-2 rounded-full bg-[#EEEEEE] text-black hover:bg-[#DC5F00] hover:text-black transition"
+          aria-label="Skills"
         >
-          <i class="fa fa-book text-white text-lg items-center"></i>
+          <i class="fa fa-book text-black text-lg items-center"></i>
         </a>
         <a
           href="#Contact"
-          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full transition"
+          class="flex items-center gap-2 px-2 py-2 rounded-full bg-[#EEEEEE] text-black hover:bg-[#DC5F00] hover:text-black transition"
+          aria-label="Contact"
         >
-          <i class="fa fa-phone text-white text-lg items-center"></i>
+          <i class="fa fa-phone text-black text-lg items-center"></i>
         </a>
         <a
           href="https://github.com/DiscoveryPiscine42Bangkok2025/discovery-piscine-fun-with-coding-8-13-sep-2025-1XKuson"
-          class="flex items-center bg-black gap-2 px-2 py-2 rounded-full transition"
+          class="flex items-center gap-2 px-2 py-2 rounded-full bg-[#CF0A0A] text-black hover:bg-[#DC5F00] transition"
+          aria-label="GitHub"
         >
-          <i class="fa fa-github text-white text-lg items-center"></i>
+          <i class="fa fa-github text-black text-lg items-center"></i>
         </a>
       </div>
     </nav>
-    <main class="pt-24 w-full">
+
+    <main class="pt-24 w-full bg-[#EEE]">
       <section
         id="Profile"
         class="relative min-h-screen bg-[#000000] text-[#EEEEEE] overflow-hidden"
@@ -138,7 +145,6 @@
         ></div>
 
         <div class="mx-auto max-w-7xl px-6 md:px-10 py-16 md:py-24">
-
           <div class="mb-10 flex items-center gap-3">
             <span
               class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-zinc-900/60 px-3 py-1 text-xs tracking-wide"
@@ -177,14 +183,14 @@
                   <div class="text-sm text-zinc-300">Bangkok, Thailand</div>
                   <div class="flex items-center gap-2">
                     <a
-                      href="#"
+                      href="https://github.com/1XKuson"
                       class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#EEEEEE] text-black hover:opacity-90 transition"
                       aria-label="GitHub"
                     >
                       <i class="fa fa-github"></i>
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/kuson-ta-7913572a1/"
                       class="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#EEEEEE] text-black hover:opacity-90 transition"
                       aria-label="LinkedIn"
                     >
@@ -224,10 +230,10 @@
                 Full‑Stack Developer • IoT Engineer
               </p>
               <p class="mt-6 max-w-2xl text-zinc-300">
-                I craft fast, accessible web apps with a focus on elegant UX and
-                maintainable code. My toolkit includes modern JavaScript
-                frameworks, component systems, and a healthy respect for
-                performance budgets.
+                Dual-degree student at KMITL with expertise in IoT, AI, and
+                full-stack development. Skilled in Python, C++, JavaScript, and
+                hardware platforms like Raspberry Pi and Arduino, creating
+                innovative tech solutions for real-world problems.
               </p>
 
               <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 gap-4">
@@ -235,7 +241,7 @@
                   class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4"
                 >
                   <div class="text-2xl font-bold">
-                    5+<span class="text-[#DC5F00]"> yrs</span>
+                    3+<span class="text-[#DC5F00]"> yrs</span>
                   </div>
                   <div class="text-sm text-zinc-400">Experience</div>
                 </div>
@@ -243,7 +249,7 @@
                   class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4"
                 >
                   <div class="text-2xl font-bold">
-                    30+<span class="text-[#CF0A0A]"> proj</span>
+                    10+<span class="text-[#CF0A0A]"> proj</span>
                   </div>
                   <div class="text-sm text-zinc-400">Delivered</div>
                 </div>
@@ -251,9 +257,9 @@
                   class="rounded-2xl bg-zinc-900/60 ring-1 ring-white/10 p-4"
                 >
                   <div class="text-2xl font-bold">
-                    100%<span class="text-[#EEEEEE]">+</span>
+                    100<span class="text-[#EEEEEE]">+</span>
                   </div>
-                  <div class="text-sm text-zinc-400">Client‑first</div>
+                  <div class="text-sm text-zinc-400">Friends</div>
                 </div>
               </div>
 
@@ -282,114 +288,132 @@
           style="background: linear-gradient(90deg, #cf0a0a, #dc5f00)"
         ></div>
       </section>
-      <section
-        class="min-h-screen flex flex-col justify-center items-center bg-[#EEE] px-2 sm:px-4"
-        id="Profile"
-      >
-        <div
-          class="max-w-[80%] md:max-w-[70%] w-full flex flex-col md:flex-row h-full bg-black mt-10 mb-20 rounded-3xl"
-        >
-          <div
-            class="flex flex-col w-full md:w-1/2 p-6 md:p-12 items-center md:items-start"
-          >
-            <img
-              class="rounded-3xl w-full h-auto md:w-auto md:h-auto object-cover"
-              src="https://avatars.githubusercontent.com/u/115791113?v=4"
-              alt=""
-            />
-            <div class="w-full">
-              <h1
-                class="text-2xl md:text-5xl font-bold text-white mt-6 mb-4 text-center md:text-left sm:px-5"
-              >
-                Kuson Ta
-              </h1>
-              <p
-                class="text-white text-base md:text-lg text-center md:text-left sm:p-5"
-              >
-                Dual-degree student at KMITL with expertise in IoT, AI, and
-                full-stack development. Skilled in Python, C++, JavaScript, and
-                hardware platforms like Raspberry Pi and Arduino, creating
-                innovative tech solutions for real-world problems.
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col w-full md:w-1/2 p-6 md:p-12">
-            <h2
-              class="text-2xl md:text-3xl font-bold text-indigo-300 mb-6 flex items-center gap-3"
-            >
-              <i class="fa fa-cogs text-indigo-400"></i> Core Skills
-            </h2>
 
-            <div
-              class="mb-6 bg-zinc-800 p-4 md:p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-md"
+      <section id="Skills" class="bg-[#000000] text-[#EEEEEE] py-16 mb-10">
+        <div class="mx-auto max-w-6xl px-6 md:px-8 mt-15 mb-15">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12">
+            <span
+              class="bg-gradient-to-r from-[#CF0A0A] to-[#DC5F00] bg-clip-text text-transparent"
+              >Skills & Experience</span
             >
-              <h3
-                class="text-base md:text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2"
-              >
-                <i class="fa fa-code text-indigo-400"></i> Programming &
-                Software
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-200 text-sm md:text-base ml-2 space-y-2"
-              >
-                <li>
-                  <span class="font-semibold text-white">Languages:</span>
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+              <div>
+                <h3 class="text-lg font-semibold text-[#DC5F00] mb-2">
+                  Core Skills
+                </h3>
+                <ul class="space-y-1 text-zinc-300 text-sm">
+                  <li>2022 – Present · GPA 3.91</li>
+                  <li>2019 – 2022 · GPA 4.00</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="text-md font-semibold text-[#CF0A0A] mb-2">
+                  Programming
+                </h4>
+                <p class="text-zinc-300 text-sm">
                   C, C++ (OOP), Python, JavaScript, HTML, CSS, SQL
-                </li>
-                <li>
-                  <span class="font-semibold text-white"
-                    >Frameworks & Tools:</span
-                  >
-                  Node.js, Express.js, React.js, Postman, Git, Docker, Cisco
-                  Packet Tracer
-                </li>
-              </ul>
-            </div>
+                </p>
+              </div>
 
-            <div
-              class="mb-6 bg-zinc-800 p-4 md:p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-md"
-            >
-              <h3
-                class="text-base md:text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2"
-              >
-                <i class="fa fa-microchip text-indigo-400"></i> Hardware & IoT
-                Tools
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-200 text-sm md:text-base ml-2 space-y-2"
-              >
-                <li>Raspberry Pi, Arduino, ESP32, Integrated Circuits (ICs)</li>
-              </ul>
-            </div>
+              <div>
+                <h4 class="text-md font-semibold text-[#CF0A0A] mb-2">
+                  Software Tools
+                </h4>
+                <p class="text-zinc-300 text-sm">
+                  Node.js, Express.js, React, MySQL, Postman, Git, Docker
+                </p>
+              </div>
 
-            <div
-              class="bg-zinc-800 p-4 md:p-6 rounded-2xl hover:scale-[1.02] transition-transform shadow-md"
-            >
-              <h3
-                class="text-base md:text-lg font-semibold text-indigo-300 mb-3 flex items-center gap-2"
-              >
-                <i class="fa fa-users text-indigo-400"></i> Professional Skills
-              </h3>
-              <ul
-                class="list-disc list-inside text-gray-200 text-sm md:text-base ml-2 space-y-2"
-              >
-                <li>
+              <div>
+                <h4 class="text-md font-semibold text-[#CF0A0A] mb-2">
+                  Hardware Tools
+                </h4>
+                <p class="text-zinc-300 text-sm">
+                  Raspberry Pi, Arduino Board, ESP32, Integrated Circuit (IC)
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-md font-semibold text-[#CF0A0A] mb-2">
+                  Soft Skills
+                </h4>
+                <p class="text-zinc-300 text-sm">
                   Teamwork, Critical Thinking, Communication, Problem Solving,
                   Time Management, Adaptability, Leadership
-                </li>
-              </ul>
+                </p>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <h3 class="text-lg font-semibold text-[#DC5F00] mb-4">
+                Projects & Experience
+              </h3>
+
+              <div>
+                <h4 class="font-semibold">
+                  Durian Leaf Classifier with LINE Chatbot | 2024
+                </h4>
+                <p class="text-zinc-400 text-sm">
+                  AI system for leaf disease classification with deep learning
+                  on AWS EC2, LINE chatbot integration, Express.js & Flask APIs,
+                  PostgreSQL.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold">
+                  BKK BIN+ e-Waste Hackathon (2nd Runner Up) | 2024
+                </h4>
+                <p class="text-zinc-400 text-sm">
+                  AI waste management with IoT sensors, Node.js API, PostgreSQL,
+                  LINE APIs for user points, coupons, and bin locations.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold">ProfessorDB Web App | 2024</h4>
+                <p class="text-zinc-400 text-sm">
+                  CRUD app with React & Express.js, SQL backend, REST API,
+                  features for auto CV generation and electronic name cards.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold">Unicon Tracking & Analyze | 2023</h4>
+                <p class="text-zinc-400 text-sm">
+                  ESP32 bus tracker with AWS EC2, InfluxDB, Grafana, OpenCV &
+                  Ultralytics for passenger counting, real-time speed and
+                  location tracking.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold">QR Durian IoT Web App | 2022</h4>
+                <p class="text-zinc-400 text-sm">
+                  Web app with QR code generation and IoT data collection (HTML,
+                  CSS, JS, PHP, SQL) for temperature, humidity, and rainfall
+                  metrics.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="font-semibold">
+                  Orange Size Measuring Instrument | 2022
+                </h4>
+                <p class="text-zinc-400 text-sm">
+                  IoT device with ESP32 & Arduino Uno for orange size
+                  measurement; circuit design and sensor integration experience.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="h-screen bg-[#CF0A0A] flex flex-col justify-center items-center px-4"
-        id="Experiences"
-      >
-        <div
-          class="max-w-[80%] md:max-w-[70%] bg-[#EEE] w-full h-[70%] rounded-3xl"
-        ></div>
-      </section>
+
       <section
         class="min-h-screen bg-[#EEE] flex flex-col items-center justify-center"
         id="Contact"

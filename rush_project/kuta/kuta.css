@@ -1,11 +1,16 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'JetBrains Mono', monospace;
+  font-family: "JetBrains Mono", monospace;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Geist', 'Kanit', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Geist", "Kanit", sans-serif;
 }
 
 .jetbrains-mono {
@@ -15,8 +20,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 var {
-  ---red : #CF0A0A;
-  ---grey : #EEE;
-  ---black : #000;
-  ---orange : #DC5F00
+  ---red: #cf0a0a;
+  ---grey: #eee;
+  ---black: #000;
+  ---orange: #dc5f00;
 }
